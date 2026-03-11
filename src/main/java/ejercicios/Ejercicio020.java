@@ -4,7 +4,17 @@ public class Ejercicio020 {
 	
 	//COMPLETAR METODO
 	public boolean esPrimo(int n) {
-        return false;
+		if (n == 1 || n == 0) {
+			return false;
+		}
+		for (int i = 1; i<=n;i++) {
+			if (i != 1 && i !=n) {
+				if (n%i == 0) {
+					return false;
+				}
+			}
+		}
+        return true;
     }
 
     public static void main(String[] args) {

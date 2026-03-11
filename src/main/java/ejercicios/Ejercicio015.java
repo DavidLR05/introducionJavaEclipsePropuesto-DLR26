@@ -6,6 +6,18 @@ public class Ejercicio015 {
 	
 	//COMPLETAR METODO
 	public void mostrarMultiplosTres(int n) {
+		if (n < 3) {
+			System.out.println("No debe mostrar múltiplos si N < 3");
+		}
+		
+		
+		System.out.println("Múltiplos de 3 hasta "+ n);
+		
+		for (int i = 1 ; i <= n ; i++) {
+			if (i % 3 == 0) {
+				System.out.print(i+ " ");
+			}
+		}
 		
     }
 

@@ -4,6 +4,11 @@ public class Ejercicio013 {
 	
 	//COMPLETAR METODO
 	public void mostrarPrimeros20Pares() {
+		System.out.println("Los primeros veinte números pares:");
+		for (int i = 1; i <= 20; i++) {
+			int k = i*2;
+			System.out.println(k+" ");
+		}
         
     }
 

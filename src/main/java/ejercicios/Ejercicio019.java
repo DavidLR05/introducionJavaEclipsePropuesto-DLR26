@@ -4,7 +4,18 @@ public class Ejercicio019 {
 	
 	//COMPLETAR METODO
 	public int potencia(int base, int exponente) {
-        return 0;
+		if (exponente < 0) {
+			throw new IllegalArgumentException("El exponente debe ser no negativo");
+		}
+		if (exponente == 0) {
+			return 1;
+		}
+		int suma = base;
+		for (int i  = 1; i < exponente ; i++) {
+			
+			suma = suma * base;
+		}
+        return suma;
     }
 
     public static void main(String[] args) {

@@ -4,7 +4,10 @@ public class Ejercicio017 {
 	
 	//COMPLETAR METODO
 	public int maximo(int a, int b) {
-		return 0;
+		if (a > b) {
+			return a;
+		}
+		return b;
     }
 
     public static void main(String[] args) {
