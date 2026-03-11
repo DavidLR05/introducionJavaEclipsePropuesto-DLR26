@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class Ejercicio012 {
 	
 	//COMPLETAR METODO
-	public double sumarHastaCero() {
-		return 0.0;
+	public int sumarHastaCero() {
+		int suma = 0;
+		return suma;
     }
 	
 

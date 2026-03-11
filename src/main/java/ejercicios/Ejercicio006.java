@@ -1,11 +1,27 @@
 package ejercicios;
 
+
+
 public class Ejercicio006 {
 	
 	//COMPLETAR METODO
 	public String obtenerCalificacion(double nota) {
-		return "";
-    }
+		
+		int n = (int) nota;
+		if (nota < 0 || nota > 10 ) {
+			return "Nota no válida";
+		}
+		switch (n) {
+			case 5: {return "Suficiente";}
+			case 6: return "Bien";
+			case 7: ;
+			case 8: return "Notable";
+			case 9: ;
+			case 10: return "Sobresaliente";
+			default : return "Insuficiente";
+		}
+		
+}
 
     public static void main(String[] args) {
     	Ejercicio006 ejercicio006 = new Ejercicio006();
