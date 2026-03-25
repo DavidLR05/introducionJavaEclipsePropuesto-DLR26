@@ -4,7 +4,23 @@ public class Ejercicio021 {
 	
 	//COMPLETAR METODO
 	public int contarVocales(String texto) {
-        return 0;
+		
+        int vocal = 0;
+        if (texto == null || texto == "") {
+        	return 0;
+        }else {
+        	char[] cadena = texto.toCharArray();
+        for (int i = 0; i< texto.length(); i++) {
+        	if(cadena[i] == 'a' || cadena[i] == 'e' || cadena[i] == 'i' 
+        		|| cadena[i] == 'o' || cadena[i] == 'u' ||
+        		cadena[i] == 'A' || cadena[i] == 'E' || cadena[i] == 'I'
+        		|| cadena[i] == 'O' || cadena[i] == 'U' )  {
+        		vocal = vocal+1;
+        	}
+        }
+        return vocal;
+        }
+		
     }
 
     public static void main(String[] args) {
