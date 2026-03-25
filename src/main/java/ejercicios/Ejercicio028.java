@@ -8,15 +8,16 @@ public class Ejercicio028 {
 	
 	//COMPLETAR METODO
     public void cajeroAutomatico() {
+    	int b;
     	do {
-    		scanner scanner;
+    		java.util.Scanner scanner = new java.util.Scanner(System.in);
     		System.out.println("=== Cajero Automatico ===");
     		System.out.println("1 Consultar Saldo");
     		System.out.println("2 Ingresar dinero");
     		System.out.println("3 Retirar dinero");
     		System.out.println("0 Salir");
     		System.out.println("Introduce accion a realizar");
-    		int b = scanner.nextInt();
+    		b = scanner.nextInt();
     		switch(b) {
     					case 1: {consultarSaldo();
     					
@@ -36,6 +37,7 @@ public class Ejercicio028 {
     			System.out.println("Presione ENTER para continuar ... ");
     			scanner.nextLine();*/
     		} while (b != 0);
+    		
     	
         
     }
@@ -46,7 +48,8 @@ public class Ejercicio028 {
     }
     
     //COMPLETAR METODO
-    private void ingresarDinero(Scanner scanner) {
+    private void ingresarDinero() {
+    	java.util.Scanner scanner = new java.util.Scanner(System.in);
     	System.out.println("Introduzca cantidad a ingresar");
     	int a = scanner.nextInt();
     	saldo = saldo + a;
@@ -55,10 +58,11 @@ public class Ejercicio028 {
     }
     
     //COMPLETAR METODO
-    private void retirarDinero(Scanner scanner) {
+    private void retirarDinero() {
+    	java.util.Scanner scanner = new java.util.Scanner(System.in);
     	System.out.println("Introduzca cantidad a retirar");
     	int a = scanner.nextInt();
-    	saldo = saldo + a;
+    	saldo = saldo - a;
     	System.out.println("Retiro realizado. Nuevo saldo: "+saldo);
         
     }
@@ -67,5 +71,6 @@ public class Ejercicio028 {
         Ejercicio028 ejercicio = new Ejercicio028();
         ejercicio.cajeroAutomatico();
     }
+    
     
 }
