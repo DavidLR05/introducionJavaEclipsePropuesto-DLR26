@@ -31,9 +31,10 @@ class Ejercicio028Test {
         System.setIn(originalIn);
         
         String salida = out.toString();
+        System.out.println("Salida: "+salida);
         assertTrue(salida.contains("Saldo actual: 1000"));
         assertTrue(salida.contains("Ingreso realizado. Nuevo saldo: 1500"));
-        assertTrue(salida.contains("Retiro realizado. Nuevo saldo: 1200"));
+        assertTrue(salida.contains("Retiro realizado. Nuevo saldo: 1200")); 
         assertTrue(salida.contains("Saldo actual: 1200"));
     }
 
